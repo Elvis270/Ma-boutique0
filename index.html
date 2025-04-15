@@ -3,57 +3,197 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Empire Livre - Votre royaume de la lecture</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire Livre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #f9f7f4;
+            color: #333;
+        }
+        header {
+            background-color: #1c1c1c;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            background-image: url('https://images.unsplash.com/photo-1512820790803-83ca734da794');
+            background-size: cover;
+            background-position: center;
+        }
+        nav {
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0.5rem 1rem;
+            font-weight: bold;
+        }
+        .section {
+            padding: 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .section h2 {
+            border-left: 4px solid #be9b7b;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        .promo {
+            background-color: #ffd1dc;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .categories, .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        .card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .formulaire input, .formulaire button {
+            display: block;
+            margin: 1rem 0;
+            padding: 0.8rem;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            background-color: #1c1c1c;
+            color: white;
+            padding: 2rem;
+        }
+        .footer-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <img src="logo.png" alt="Logo Empire Livre" class="logo">
+    <header>
+        <h1>Empire Livre</h1>
+        <p>Promo exceptionnelle sur tous les livres scolaires !</p>
     </header>
-    <nav class="nav">
+    <nav>
         <a href="#">Accueil</a>
-        <a href="#">Catégories</a>
-        <a href="#">Produits</a>
-        <a href="#">Panier</a>
-        <a href="#">Contact</a>
-        <a href="#">Infos légales</a>
+        <a href="#categories">Catégories</a>
+        <a href="#produits">Produits</a>
+        <a href="#catalogue">Catalogue</a>
+        <a href="#panier">Panier</a>
+        <a href="#compte">Compte</a>
+        <a href="#paiement">Paiement</a>
+        <a href="#contact">Contact</a>
+        <a href="#infos">Infos légales</a>
     </nav>
-    <main>
-        <section class="promo">Promo exceptionnelle sur tous les livres scolaires !</section>
-        <section class="categories">
-            <h2>Catégories</h2>
-            <div class="category" style="background-color:#FFD700;">Romans</div>
-            <div class="category" style="background-color:#FFB6C1;">Policiers</div>
-            <div class="category" style="background-color:#87CEEB;">Science-fiction</div>
-            <div class="category" style="background-color:#98FB98;">Développement personnel</div>
-            <div class="category" style="background-color:#FFA07A;">Droit</div>
-            <div class="category" style="background-color:#DA70D6;">Éducation</div>
-            <div class="category" style="background-color:#FAFAD2;">Histoire</div>
-            <div class="category" style="background-color:#E6E6FA;">Religion</div>
-        </section>
-        <section class="produits" style="background-color:#ADD8E6;">
-            <h2>Produits</h2>
-            <div class="product">Le Pouvoir de Lire - 10€</div>
-            <div class="product">L'Art du Savoir - 12€</div>
-        </section>
-        <section class="contact">
-            <h2>Contact</h2>
-            Email : empirelivre@gmail.com<br>
-            Téléphone : +229 0190107436<br>
-            WhatsApp : <a href="https://wa.me/2290190107436">+229 0190107436</a>
-        </section>
-        <section class="legal">
-            <h2>Informations Légales</h2>
-            <h3>Mentions légales</h3>
-            Ce site est édité par Empire Livre, entreprise spécialisée dans la vente de livres en ligne.<br>
-            <h3>CGV</h3>
-            Les conditions générales de vente définissent les modalités de commande, paiement, et livraison.<br>
-            <h3>Politique de confidentialité</h3>
-            Vos données sont protégées conformément au RGPD.<br>
-            <h3>Politique de retours et remboursements</h3>
-            Retours sous 14 jours, remboursement sous 7 jours après réception.
-        </section>
-    </main>
-    <footer class="footer">© 2025 Empire Livre. Tous droits réservés.</footer>
+    <div class="section promo">
+        Promo exceptionnelle sur tous les livres scolaires !
+    </div>
+    <div class="section" id="categories">
+        <h2>Catégories</h2>
+        <div class="categories">
+            <div class="card">Romans</div>
+            <div class="card">Policiers</div>
+            <div class="card">Science-fiction</div>
+            <div class="card">Développement personnel</div>
+            <div class="card">Droit</div>
+            <div class="card">Éducation</div>
+            <div class="card">Histoire</div>
+            <div class="card">Religion</div>
+        </div>
+    </div>
+    <div class="section" id="produits">
+        <h2>Produits</h2>
+        <div class="products">
+            <div class="card"><strong>Le Pouvoir de Lire</strong><br><span>10€</span></div>
+            <div class="card"><strong>L'Art du Savoir</strong><br><span>12€</span></div>
+        </div>
+    </div>
+    <div class="section" id="catalogue">
+        <h2>Catalogue</h2>
+        <div class="products">
+            <div class="card">[Romans] Le Secret des Mots - 8€</div>
+            <div class="card">[Policiers] L'Affaire Muette - 9€</div>
+            <div class="card">[Science-fiction] Vers l’Inconnu - 11€</div>
+            <div class="card">[Droit] Introduction au Droit Public - 14€</div>
+        </div>
+    </div>
+    <div class="section" id="panier">
+        <h2>Panier</h2>
+        <div class="card">
+            <p><strong>Le Pouvoir de Lire</strong> - 10€ x1</p>
+            <p><strong>L'Art du Savoir</strong> - 12€ x1</p>
+            <hr>
+            <p><strong>Total :</strong> 22€</p>
+            <button>Commander</button>
+        </div>
+    </div>
+    <div class="section" id="compte">
+        <h2>Mon Compte</h2>
+        <div class="formulaire">
+            <input type="text" placeholder="Nom d'utilisateur">
+            <input type="password" placeholder="Mot de passe">
+            <button>Connexion</button>
+            <hr>
+            <input type="text" placeholder="Nouvel utilisateur">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Créer un mot de passe">
+            <button>Créer un compte</button>
+        </div>
+    </div>
+    <div class="section" id="paiement">
+        <h2>Paiement</h2>
+        <div class="formulaire">
+            <input type="text" placeholder="Nom complet">
+            <input type="text" placeholder="Adresse de livraison">
+            <input type="text" placeholder="Numéro de carte (fictif)">
+            <input type="text" placeholder="Date d'expiration">
+            <input type="text" placeholder="CVC">
+            <button>Payer maintenant</button>
+        </div>
+    </div>
+    <div class="section" id="contact">
+        <h2>Contact</h2>
+        <p>Email : empirelivre@gmail.com</p>
+        <p>Téléphone : +229 0190107436</p>
+        <p>WhatsApp : <a href="https://wa.me/2290190107436">+229 0190107436</a></p>
+    </div>
+    <footer id="infos">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Mentions légales</h3>
+                <p>Ce site est édité par Empire Livre, entreprise spécialisée dans la vente de livres en ligne.</p>
+            </div>
+            <div class="footer-column">
+                <h3>CGV</h3>
+                <p>Les conditions générales de vente définissent les modalités de commande, paiement et livraison.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Confidentialité</h3>
+                <p>Vos données sont protégées conformément au RGPD.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Retours & Remboursements</h3>
+                <p>Retours sous 14 jours, remboursement sous 7 jours après réception.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
