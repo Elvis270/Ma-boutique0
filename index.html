@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma Boutique de Livres</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenue sur Ma Boutique de Livres</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#boutique">Boutique</a></li>
+        <li><a href="#panier">Panier</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle">Changer le thème</button></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Des livres et documents à petit prix</h2>
+    <p>Découvrez notre collection et commandez en toute simplicité !</p>
+    <a href="#boutique" class="btn">Voir la boutique</a>
+  </section>
+  <section id="boutique" class="boutique">
+    <h2>Notre sélection</h2>
+    <div class="recherche-filtre">
+      <input type="text" id="recherche" placeholder="Rechercher un produit...">
+      <select id="tri">
+        <option value="">Trier par</option>
+        <option value="prix-asc">Prix croissant</option>
+        <option value="prix-desc">Prix décroissant</option>
+      </select>
+    </div>
+    <div class="produits" id="liste-produits">
+      <div class="produit" data-nom="Livre 1" data-prix="10">
+        <img src="https://via.placeholder.com/150" alt="Livre 1">
+        <h3>Livre 1</h3>
+        <p>10 €</p>
+        <button>Ajouter au panier</button>
+      </div>
+      <div class="produit" data-nom="Document 2" data-prix="7">
+        <img src="https://via.placeholder.com/150" alt="Document 2">
+        <h3>Document 2</h3>
+        <p>7 €</p>
+        <button>Ajouter au panier</button>
+      </div>
+      <div class="produit" data-nom="Livre 3" data-prix="15">
+        <img src="https://via.placeholder.com/150" alt="Livre 3">
+        <h3>Livre 3</h3>
+        <p>15 €</p>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+  </section>
+  <section id="panier" class="panier">
+    <h2>Votre Panier</h2>
+    <div id="contenu-panier"></div>
+    <button id="vider-panier" class="btn">Vider le panier</button>
+    <button class="btn">Payer maintenant</button>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contactez-nous</h2>
+    <form id="form-contact" action="https://formspree.io/f/mzzewazl" method="POST">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit" class="btn">Envoyer</button>
+      <p id="form-message" style="display:none; color:green; margin-top:10px;">Merci ! Votre message a bien été envoyé.</p>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Ma Boutique de Livres. Tous droits réservés.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
