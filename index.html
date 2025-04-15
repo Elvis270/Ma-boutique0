@@ -85,6 +85,40 @@
             flex: 1;
             min-width: 200px;
         }
+    
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .categories, .products {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+            header {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .section {
+                padding: 3rem;
+            }
+            .card {
+                font-size: 1.1rem;
+            }
+        }
+        @media (min-width: 1600px) {
+            body {
+                font-size: 1.2rem;
+            }
+            .card {
+                font-size: 1.3rem;
+                padding: 2rem;
+            }
+            .section {
+                max-width: 1400px;
+            }
+        }
     </style>
 </head>
 <body>
