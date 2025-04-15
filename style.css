@@ -1,58 +1,65 @@
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f0f8ff;
 }
 header {
-  background-color: #333;
+  background-color: #1e90ff;
   color: white;
   padding: 20px;
   text-align: center;
 }
 .logo {
-  max-width: 100px;
+  max-width: 80px;
 }
 nav ul {
-  background-color: #444;
+  background-color: #32cd32;
   overflow: hidden;
-  color: white;
-  padding: 0;
-  text-align: center;
   margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
 }
 nav ul li {
   display: inline-block;
-  padding: 20px;
+  padding: 15px;
 }
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
-section {
-  padding: 20px;
+.banniere {
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 .categories button {
+  background-color: #ffff00;
   margin: 5px;
   padding: 10px;
+  border: none;
+  font-weight: bold;
 }
 .livre {
-  border: 1px solid #ddd;
-  padding: 10px;
+  border: 2px solid #ddd;
+  padding: 15px;
   margin: 10px;
+  background-color: white;
   display: inline-block;
   width: 200px;
+  vertical-align: top;
 }
 .livre img {
   max-width: 100%;
 }
 footer {
-  background-color: #222;
+  background-color: #333;
   color: white;
   text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 15px;
+  margin-top: 30px;
 }
