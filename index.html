@@ -2,92 +2,58 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Empire Livre</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Empire Livre - Votre royaume de la lecture</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo Empire Livre" class="logo">
-    <h1>Empire Livre</h1>
-    <p class="slogan">Votre royaume de la lecture</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#categories">Catégories</a></li>
-      <li><a href="#livres">Produits</a></li>
-      <li><a href="#panier">Panier</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#infos">Infos légales</a></li>
-    </ul>
-  </nav>
-
-  <section id="accueil">
-    <h2>Bienvenue sur Empire Livre</h2>
-    <div class="banniere">Promo exceptionnelle sur tous les livres scolaires !</div>
-  </section>
-
-  <section id="categories">
-    <h2>Catégories</h2>
-    <div class="categories">
-      <button>Romans</button>
-      <button>Policiers</button>
-      <button>Science-fiction</button>
-      <button>Développement personnel</button>
-      <button>Droit</button>
-      <button>Éducation</button>
-      <button>Histoire</button>
-      <button>Religion</button>
-    </div>
-  </section>
-
-  <section id="livres">
-    <h2>Produits</h2>
-    <div class="livre">
-      <img src="livre1.jpg" alt="Livre 1">
-      <h3>Le Pouvoir de Lire</h3>
-      <p>Prix : 10 €</p>
-      <p>Description : Un livre inspirant pour les passionnés de lecture.</p>
-      <button>Ajouter au panier</button>
-    </div>
-    <div class="livre">
-      <img src="livre2.jpg" alt="Livre 2">
-      <h3>L'Art du Savoir</h3>
-      <p>Prix : 12 €</p>
-      <p>Description : Découvrez l'art d'apprendre et de réussir.</p>
-      <button>Ajouter au panier</button>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : empirelivre@gmail.com</p>
-    <p>Téléphone : +229 0190107436</p>
-    <p>
-      WhatsApp : <a href="https://wa.me/2290190107436" target="_blank">+229 0190107436</a>
-    </p>
-  </section>
-
-  <section id="infos">
-    <h2>Informations Légales</h2>
-    <h3>Mentions légales</h3>
-    <p>Ce site est édité par Empire Livre, entreprise spécialisée dans la vente de livres en ligne.</p>
-
-    <h3>CGV</h3>
-    <p>Les conditions générales de vente définissent les modalités de commande, paiement, et livraison.</p>
-
-    <h3>Politique de confidentialité</h3>
-    <p>Vos données sont protégées conformément au RGPD. Aucune revente de données.</p>
-
-    <h3>Politique de retours et remboursements</h3>
-    <p>Les retours sont acceptés sous 14 jours. Remboursement sous 7 jours après réception.</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Empire Livre. Tous droits réservés.</p>
-  </footer>
+    <header class="header">
+        <img src="logo.png" alt="Logo Empire Livre" class="logo">
+    </header>
+    <nav class="nav">
+        <a href="#">Accueil</a>
+        <a href="#">Catégories</a>
+        <a href="#">Produits</a>
+        <a href="#">Panier</a>
+        <a href="#">Contact</a>
+        <a href="#">Infos légales</a>
+    </nav>
+    <main>
+        <section class="promo">Promo exceptionnelle sur tous les livres scolaires !</section>
+        <section class="categories">
+            <h2>Catégories</h2>
+            <div class="category" style="background-color:#FFD700;">Romans</div>
+            <div class="category" style="background-color:#FFB6C1;">Policiers</div>
+            <div class="category" style="background-color:#87CEEB;">Science-fiction</div>
+            <div class="category" style="background-color:#98FB98;">Développement personnel</div>
+            <div class="category" style="background-color:#FFA07A;">Droit</div>
+            <div class="category" style="background-color:#DA70D6;">Éducation</div>
+            <div class="category" style="background-color:#FAFAD2;">Histoire</div>
+            <div class="category" style="background-color:#E6E6FA;">Religion</div>
+        </section>
+        <section class="produits" style="background-color:#ADD8E6;">
+            <h2>Produits</h2>
+            <div class="product">Le Pouvoir de Lire - 10€</div>
+            <div class="product">L'Art du Savoir - 12€</div>
+        </section>
+        <section class="contact">
+            <h2>Contact</h2>
+            Email : empirelivre@gmail.com<br>
+            Téléphone : +229 0190107436<br>
+            WhatsApp : <a href="https://wa.me/2290190107436">+229 0190107436</a>
+        </section>
+        <section class="legal">
+            <h2>Informations Légales</h2>
+            <h3>Mentions légales</h3>
+            Ce site est édité par Empire Livre, entreprise spécialisée dans la vente de livres en ligne.<br>
+            <h3>CGV</h3>
+            Les conditions générales de vente définissent les modalités de commande, paiement, et livraison.<br>
+            <h3>Politique de confidentialité</h3>
+            Vos données sont protégées conformément au RGPD.<br>
+            <h3>Politique de retours et remboursements</h3>
+            Retours sous 14 jours, remboursement sous 7 jours après réception.
+        </section>
+    </main>
+    <footer class="footer">© 2025 Empire Livre. Tous droits réservés.</footer>
 </body>
 </html>
